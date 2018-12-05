@@ -1,4 +1,4 @@
-package medium
+package mediums
 
 /**
  * Definition for singly-linked list.
