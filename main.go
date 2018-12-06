@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	fmt.Println(MyAtoi("-+1"))
+	fmt.Println(MaxArea([]int{1, 2, 4, 3}))
 
 }
