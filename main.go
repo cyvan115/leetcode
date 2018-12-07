@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	. "leetcode/medium"
+	. "leetcode/simple"
 )
 
 func main() {
 
-	fmt.Println(MaxArea([]int{1, 2, 4, 3}))
+	fmt.Println(LongestCommonPrefix([]string{"aa", "a"}))
 
 }

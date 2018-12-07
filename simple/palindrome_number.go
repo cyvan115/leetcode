@@ -2,6 +2,7 @@ package simples
 
 // https://leetcode-cn.com/problems/palindrome-number/description/
 func IsPalindrome(x int) bool {
+	// 思路：莽
 	xCopy := x
 
 	if xCopy < 0 {
