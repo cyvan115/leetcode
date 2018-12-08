@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	. "leetcode/simple"
+	. "leetcode/medium"
 )
 
 func main() {
 
-	fmt.Println(LongestCommonPrefix([]string{"aa", "a"}))
+	fmt.Println(ThreeSum([]int{-1, 0, 1, 2, -1, -4}))
 
 }
