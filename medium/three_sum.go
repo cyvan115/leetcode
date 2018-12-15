@@ -2,15 +2,15 @@ package mediums
 
 // https://leetcode-cn.com/problems/3sum/description/
 func ThreeSum(nums []int) [][]int {
-	// 思路：我得再捋一捋，一直超时，要换个思路， bubble sort超了我也就忍了  quick sort也超，看来是算法慢不是排序慢
+	// 思路：简化为two sum进行求解
 	ret := [][]int{}
 	quickSort(nums, 0, len(nums)-1)
-	for i, _ := range nums {
-		left, right := 0, len(nums)-1
+	for i := range nums {
+		left, right := i, len(nums)-1
 		for left < right {
-			if left == i || nums[left]+nums[right] < 0-nums[i] || (left != 0 && nums[left] == nums[left-1]) {
+			if left == i || nums[left]+nums[right] < 0-nums[i] {
 				left++
-			} else if right == i || nums[left]+nums[right] > 0-nums[i] || (right != len(nums)-1 && nums[right] == nums[right+1]) {
+			} else if right == i || nums[left]+nums[right] > 0-nums[i] {
 				right--
 			} else {
 				var newArr []int
