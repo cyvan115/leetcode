@@ -28,6 +28,17 @@ func LongestPalindrome(s string) string {
 	return s[index-max/2+1 : index+max/2+1]
 }
 
+func palindrome(i int, s string, isOdd bool) int {
+        var cnt, left, right int
+	if isOdd {
+	        cnt, left, right = 1, i - 1, i  + 1
+		// for loop
+	}
+	
+	cnt, left, right = 0, i, i + 1
+	// for loop
+}
+
 func oddPalindrome(i int, s string) int {
 	cnt := 1
 	left, right := i-1, i+1
